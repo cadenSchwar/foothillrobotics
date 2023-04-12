@@ -13,7 +13,8 @@
   --gray: #414141e3;
   --FTC-orange: #f57e25ff;
   --FRC-blue: #009cd7ff;
-  --footer-background-color: #a4c4ff;
+  --footer-background-color: #a4c4ffff;
+  --footer-text-color: #ffececff;
 }
 
 body {
@@ -272,4 +273,7 @@ footer{
   width: 100vw;
   background-color: var(--footer-background-color);
   margin-top: 5vw;
+}
+#FIRST-disclaimer{
+  color: var(--footer-text-color)
 }
