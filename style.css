@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+:root {
+  --blue: #1c4587ff;
+  --light-blue: #3866afff;
+  --light-blue-selected: #2a518fff;
+  --rich-blue: #0011ffff;
+  --gold: #aa8c2bff;
+  --peach: rgb(223, 200, 124);
+  --background-yellow: #ffc63441;
+  --background-accent-yellow: #ffc63441;
+  --faded-gray: #535353a9;
+  --gray: #414141e3;
+  --FTC-orange: #f57e25ff;
+  --FRC-blue: #009cd7ff;
+}
+
+body {
+  background-color: var(--background-yellow);
+  user-select: none;
+}
+
+nav {
+  background-color: var(--blue);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+  z-index: 3;
+}
+
+#nav-header {
+  display: inline-block;
+  color: var(--gold);
+  font-family: "Amatic SC", cursive;
+  font-size: 5vh;
+  margin: 0 5px;
+  position: relative;
+  bottom: 0.5vh;
+}
+
+#nav-header-logo {
+  height: 6vh;
+  position: relative;
+  top: 0.5vh;
+}
+
+#menu-button {
+  height: 7vh;
+  width: 7vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 0;
+  transition: right 0.5s, top 0.5s;
+}
+
+#menu-button-spotlight {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 0;
+  background: radial-gradient(circle, var(--light-blue), var(--blue) 75%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+#menu-button:hover #menu-button-spotlight {
+  opacity: 1;
+}
+
+#menu-button-icon {
+  height: 7vh;
+  z-index: 0;
+}
+
+.menu-bar {
+  background-color: var(--gold);
+  width: 50%;
+  height: 0.25vh;
+  position: absolute;
+  left: 25%;
+  transition: transform 0.5s, top 0.5s;
+  border-radius: 10px;
+}
+
+#bar-one {
+  top: 2.5vh;
+}
+
+#bar-two {
+  top: 3.5vh;
+  transition: opacity 0.5s;
+}
+
+#bar-three {
+  top: 4.5vh;
+}
+
+#side-nav-bar {
+  width: 25vw;
+  height: 93vh;
+  background-color: var(--light-blue);
+  position: fixed;
+  top: 7vh;
+  right: -25vw;
+  z-index: 2;
+  transition: right 0.5s, top 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.page-link {
+  color: white;
+  text-shadow: 2px 2px 2px var(--gold);
+  font-size: 5vh;
+  text-align: center;
+  transition: background-color 0.75s;
+  margin: 0 auto;
+  padding: 1vh 0;
+}
+
+.page-link:hover {
+  background-color: var(--light-blue-selected);
+}
+
+a {
+  text-decoration: none;
+}
+
+#content-body {
+  z-index: 1;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+}
+
+#carousel {
+  background-color: var(--background-accent-yellow);
+  border-radius: 5px;
+  position: relative;
+  left: 3%;
+  width: 94%;
+  height: 40vw;
+}
+
+.carousel-img {
+  width: 100%;
+  display: none;
+  transition: opacity 1s;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: TranslateY(-50%);
+}
+
+.carousel-button {
+  background-color: var(--faded-gray);
+  color: var(--gray);
+  width: 1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5vh;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+  z-index: 1;
+}
+
+#carousel-next-button{
+  right: 0;
+}
+
+.carousel-button:hover {
+  background-color: var(--gray);
+  color: black;
+}
+
+.active-image {
+  display: block;
+  animation: carousel-img-fade-in 1s;
+  z-index: 0;
+}
+
+@keyframes carousel-img-fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#WAW-header {
+  color: var(--gold);
+  margin: 0;
+  font-size: 35px;
+  display: inline-block;
+}
+
+#WAW-container {
+  background-color: var(--blue);
+  width: 95vw;
+  padding: 5vw 2vw;
+  position: relative;
+  top: 5vw;
+}
+
+#WAW-body {
+  color: var(--peach);
+  width: 45vw;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 0;
+}
+
+.ftc-term {
+  color: var(--FTC-orange);
+}
+
+.frc-term {
+  color: var(--FRC-blue);
+}
+
+#WAW-athena {
+  width: 25vw;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+}
+
+#about-FIRST-container {
+  width: 95vw;
+  padding: 5vw 2vw;
+  position: relative;
+  top: 5vw;
+}
+
+#about-FIRST-header {
+  color: var(--rich-blue);
+  margin: 0;
+  font-size: 35px;
+  display: block;
+  text-align: right;
+}
+#about-FIRST-body {
+  color: var(--light-blue);
+  width: 45vw;
+  font-size: 25px;
+  display: block;
+  position: absolute;
+  right: 2vw;
+  text-align: right;
+  margin-bottom: 5vw;
+}
+.standard-link {
+  color: black;
+  text-decoration: underline;
+}
+
+#about-FIRST-logo {
+  width: 45vw;
+  position: absolute;
+}
