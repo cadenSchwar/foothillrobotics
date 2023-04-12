@@ -265,7 +265,7 @@ a {
 
 #about-FIRST-logo {
   width: 45vw;
-  position: absolute;
+  float: left;
 }
 
 footer{
