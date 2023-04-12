@@ -20,7 +20,6 @@
 body {
   background-color: var(--background-yellow);
   user-select: none;
-  height: 100%;
 }
 
 nav {
