@@ -254,8 +254,7 @@ a {
   width: 45vw;
   font-size: 25px;
   display: block;
-  position: absolute;
-  right: 2vw;
+  float: right;
   text-align: right;
   margin-bottom: 5vw;
 }
