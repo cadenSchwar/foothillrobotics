@@ -272,8 +272,6 @@ footer{
   width: 100vw;
   background-color: var(--footer-background-color);
   margin-top: 5vw;
-  position: sticky;
-  bottom: 0;
 }
 #FIRST-disclaimer{
   color: var(--footer-text-color)
