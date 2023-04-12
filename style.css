@@ -273,7 +273,7 @@ footer{
   width: 100vw;
   background-color: var(--footer-background-color);
   margin-top: 5vw;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 #FIRST-disclaimer{
